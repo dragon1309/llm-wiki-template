@@ -157,9 +157,10 @@ llm-wiki-template/
 │   ├── articles/
 │   ├── papers/
 │   ├── repos/
-│   ├── tweets/
-│   ├── videos/
-│   └── misc/
+├── tweets/
+├── videos/
+├── images/
+└── misc/
 │
 ├── wiki/                    ← AI-maintained wiki
 │   ├── _index.md            ← Master catalog

@@ -1,1 +1,47 @@
-{}
+{
+  "description": "Reverse link index. Maps article -> list of articles linking TO it.",
+  "last_updated": "2026-04-14",
+  "total_articles": 12,
+  "total_links": 23,
+  "backlinks": {
+    "ai-character-consistency": [
+      "consistent-visual-style-ai",
+      "gemini-storybook"
+    ],
+    "consistent-visual-style-ai": [
+      "ai-character-consistency",
+      "ai-vs-commissioned-art",
+      "gemini-storybook",
+      "kids-content-accessibility-safety"
+    ],
+    "dad-minh": [
+      "lily-linh",
+      "mom-lan"
+    ],
+    "gemini-storybook": [
+      "ai-character-consistency",
+      "consistent-visual-style-ai"
+    ],
+    "leo-binh": [
+      "dad-minh",
+      "grandma-hoa",
+      "lily-linh",
+      "mochi-pet",
+      "mom-lan"
+    ],
+    "lily-linh": [
+      "dad-minh",
+      "grandma-hoa",
+      "leo-binh",
+      "mochi-pet",
+      "mom-lan"
+    ],
+    "mochi-pet": [
+      "leo-binh"
+    ],
+    "mom-lan": [
+      "dad-minh",
+      "lily-linh"
+    ]
+  }
+}
