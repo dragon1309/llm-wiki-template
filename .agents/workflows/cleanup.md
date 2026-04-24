@@ -73,16 +73,12 @@ Kiểm tra vi phạm tone Bách Khoa Toàn Thư:
 #### 2.7 Frontmatter
 - Có đủ fields bắt buộc? (title, source, date_added, tags, aliases, status, related, summary)
 - `aliases` có đủ? Có bao gồm tên tiếng Việt và viết tắt phổ biến?
-- `status` chính xác? (stub/draft/reviewed/canonical)
+- `status` chính xác? (stub/draft/reviewed/canonical/needs-review)
 
-#### 2.8 Prompt Safety & Platform Compliance (MỚI)
-Đối với các bài trong `wiki/tools/` hoặc `outputs/` có chứa Prompts:
-- **AI Transparency**: Có yêu cầu dán nhãn "AI-Generated" và nhúng C2PA metadata?
-- **No Dangerous Acts**: Kiểm tra các hành động nguy hiểm (lửa, điện, bơi một mình) có được cảnh báo/giám sát?
-- **Adult Supervision**: Có sự xuất hiện của [[mom-lan]] hoặc [[dad-minh]] trong cảnh nhạy cảm?
-- **Brand-Free**: Có yêu cầu loại bỏ logo/thương hiệu thực tế?
-- **Contrast & Flash**: Tuân thủ độ tương phản > 4.5:1 và không nháy hình > 3 lần/giây?
-- **Vietnam Compliance**: Có nhắc tới việc xác thực tài khoản (CCCD/SĐT) và gỡ bỏ nội dung vi phạm?
+#### 2.8 Contradiction Backlog
+- Quét callout `[!warning] Mâu Thuẫn Chưa Giải Quyết` trong bài
+- Nếu còn tồn tại → liệt kê trong báo cáo cleanup, đánh dấu ưu tiên review
+- Nếu bài có `status: needs-review` → hiển thị rõ ràng cho người dùng
 
 ### Phase 3: Sửa Chữa
 
@@ -99,8 +95,6 @@ Với mỗi vấn đề phát hiện, tự động sửa nếu confident:
 | Broken wikilinks | Sửa hoặc xóa |
 | Missing wikilinks | Thêm `[[link]]` |
 | Frontmatter thiếu | Bổ sung fields |
-| Thiếu Safety Flags (Prompts) | Thêm các chỉ dẫn an toàn/tuân thủ vào prompt |
-| Vi phạm quy định Việt Nam | Bổ sung cảnh báo xác thực/gỡ bỏ nội dung |
 
 **Quy tắc sửa:**
 - **Re-read toàn bộ bài** trước khi sửa bất kỳ dòng nào

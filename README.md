@@ -5,6 +5,15 @@
 [![Obsidian](https://img.shields.io/badge/Obsidian-7C3AED?logo=obsidian&logoColor=white)](https://obsidian.md/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+🌐 **Language:** **English** | [Tiếng Việt](README-vi.md)
+---
+
+## 📺 Video Hướng Dẫn
+
+[![Bộ Nhớ AI Kiểu Karpathy](https://img.youtube.com/vi/8K5bplMrGMw/maxresdefault.jpg)](https://youtu.be/8K5bplMrGMw?si=BvXJBK4emen8xwU1)
+
+**[Bộ Nhớ AI Kiểu Karpathy: 3 Bước Xây Wiki Cho Agent [Miễn Phí]](https://youtu.be/8K5bplMrGMw?si=BvXJBK4emen8xwU1)** — Hướng dẫn chi tiết từ setup đến sử dụng thực tế.
+
 ---
 
 ## What Is This?
@@ -26,10 +35,13 @@ The result is a **100% inspectable**, file-based knowledge system where you can 
 
 - 📂 **File-based architecture** — Markdown files, no databases, no vendor lock-in
 - 🔍 **100% inspectable** — Every piece of knowledge is a readable `.md` file
-- 🔄 **5 automated workflows** — `/ingest`, `/compile`, `/ask`, `/cleanup`, `/breakdown`
-- 📊 **Self-maintaining indexes** — Master index, glossary, backlinks, operations log
-- ⚖️ **Quality gates** — Article size guardrails, anti-cramming/thinning rules, re-read checks
-- 🧹 **Wiki health checks** — Automated tone, structure, and link auditing
+- 🔄 **8 automated workflows** — `/ingest`, `/compile`, `/ask`, `/cleanup`, `/breakdown`, `/autoresearch`, `/save`, `/overview`
+- 🔬 **Autonomous research** — Agent searches the web, evaluates sources, and ingests automatically
+- ⚖️ **Contradiction detection** — Flags conflicting claims instead of silently overwriting
+- 💾 **Chat-to-Wiki pipeline** — Save knowledge from conversations directly to wiki
+- 📊 **Self-maintaining indexes** — Master index, glossary, backlinks, executive overview, operations log
+- 🛡️ **Quality gates** — Article size guardrails, anti-cramming/thinning rules, re-read checks
+- 🧹 **Wiki health checks** — Automated tone, structure, link, and contradiction auditing
 - 📈 **Compound knowledge loop** — Each cycle produces better knowledge, which produces better outputs
 
 ## Quick Start
@@ -79,6 +91,12 @@ The agent reads `AGENTS.md` as its operating manual — no additional configurat
 
 # Step 5: Find knowledge gaps
 /breakdown
+
+# Step 6: Auto-research a topic
+/autoresearch Large Language Models
+
+# Step 7: Save chat insights to wiki
+/save
 ```
 
 ## Architecture
@@ -94,21 +112,22 @@ The agent reads `AGENTS.md` as its operating manual — no additional configurat
 │                  raw/                            │
 │  Source documents — NEVER modified, only added    │
 │  articles/ papers/ repos/ tweets/ videos/ misc/  │
-└──────────────────────┬──────────────────────────┘
-                       │ /compile
-                       ▼
+└──────────┬───────────────────────┬──────────────┘
+           │ /compile              │ /autoresearch
+           ▼                      ▼
 ┌─────────────────────────────────────────────────┐
 │                  wiki/                           │
 │  Compiled knowledge — AI-maintained wiki          │
 │  concepts/ tools/ people/ comparisons/           │
-│  + _index.md, _glossary.md, _backlinks.json      │
-└──────────┬───────────────────────┬──────────────┘
-           │ /ask                  │ /cleanup
-           ▼                      ▼
-┌──────────────────┐  ┌──────────────────────────┐
-│    answers +     │  │  quality fixes, tone      │
-│    file-back     │  │  corrections, backlinks   │
-└──────────────────┘  └──────────────────────────┘
+│  + _index.md, _glossary.md, overview.md          │
+│  ⚖️ Contradiction Check before every update      │
+└──────┬─────────┬─────────┬──────────────────────┘
+       │ /ask    │ /cleanup │ /save
+       ▼        ▼          ▼
+┌──────────┐ ┌──────────┐ ┌──────────────────────┐
+│ answers  │ │ quality  │ │ chat → raw → wiki     │
+│ + refs   │ │ fixes    │ │ knowledge extraction  │
+└──────────┘ └──────────┘ └──────────────────────┘
 ```
 
 ## Workflows
@@ -116,18 +135,48 @@ The agent reads `AGENTS.md` as its operating manual — no additional configurat
 | Command | What It Does |
 |---------|-------------|
 | `/ingest` | Imports raw sources (URLs, files, PDFs) into `raw/` with proper frontmatter |
-| `/compile` | Reads raw sources and creates/updates structured wiki articles |
-| `/ask` | Answers questions using wiki knowledge, with optional file-back |
-| `/cleanup` | Audits wiki quality — tone, structure, links, size — and auto-fixes issues |
+| `/compile` | Reads raw sources and creates/updates structured wiki articles (with **contradiction detection**) |
+| `/ask` | Answers questions using wiki knowledge, with optional file-back to wiki |
+| `/cleanup` | Audits wiki quality — tone, structure, links, size, **contradiction backlog** — and auto-fixes |
 | `/breakdown` | Scans wiki for missing entities and proposes new articles |
+| `/autoresearch` | 🆕 **Autonomous research** — searches the web, evaluates sources, ingests, and synthesizes reports |
+| `/save` | 🆕 **Chat-to-Wiki** — extracts knowledge from conversations and saves directly to wiki |
 
 Each workflow is defined in `.agents/workflows/` and can be customized.
+
+### AutoResearch — Autonomous Knowledge Discovery
+
+The `/autoresearch` workflow turns your wiki into an active researcher:
+
+```
+/autoresearch [topic]
+```
+
+**How it works:**
+1. **Gap Analysis** — Scans existing wiki to identify what's missing
+2. **3-Round Research Loop** — Broad search → Gap fill → Verify
+3. **Auto-Ingest** — Downloads and processes sources automatically
+4. **Synthesis Report** — Generates an executive summary at `outputs/reports/`
+5. **Human Review** — You approve before anything enters the wiki
+
+Configure search constraints in `raw/_research_program.md`.
+
+### Contradiction Detection
+
+When compiling new sources, the system **automatically checks for conflicting claims**:
+
+- ✅ **Temporal updates** (v1.0 → v2.0) — Updated normally
+- ✅ **New information** — Integrated normally
+- ⚠️ **Actual contradictions** — Preserved with `[!warning]` callout, tagged `needs-review`
+
+The wiki **never silently overwrites** conflicting information. Human review is always required.
 
 ## Quality System
 
 The template enforces several quality mechanisms:
 
 - **Re-read before update** — The AI must read the full article before editing (non-negotiable)
+- **Contradiction check** — Compare new claims against existing wiki before writing
 - **Article size guardrails** — 15–120 lines; too short = stub, too long = split
 - **Anti-cramming** — Sub-topics with ≥3 paragraphs get their own article
 - **Anti-thinning** — No article creation unless ≥3 meaningful sentences can be written
@@ -143,26 +192,29 @@ llm-wiki-template/
 ├── README.md                ← This file
 ├── .gitignore
 │
-├── .agents/workflows/       ← 5 automated workflows
+├── .agents/workflows/       ← 8 automated workflows
 │   ├── ask.md
+│   ├── autoresearch.md      ← 🆕 Autonomous research
 │   ├── breakdown.md
-│   ├── cleanup.md
-│   ├── compile.md
-│   └── ingest.md
+│   ├── cleanup.md           ← Updated: contradiction backlog scanning
+│   ├── compile.md           ← Updated: contradiction detection (Step 4.5)
+│   ├── ingest.md
+│   └── save.md              ← 🆕 Chat-to-Wiki pipeline
 │
 ├── .obsidian/               ← Obsidian config (pre-configured)
 │
 ├── raw/                     ← Your source documents
 │   ├── _ingest.py           ← Batch ingest script (Python)
+│   ├── _research_program.md ← 🆕 AutoResearch configuration
 │   ├── articles/
 │   ├── papers/
 │   ├── repos/
-├── tweets/
-├── videos/
-├── images/
-└── misc/
+│   ├── tweets/
+│   ├── videos/
+│   └── misc/
 │
 ├── wiki/                    ← AI-maintained wiki
+│   ├── overview.md          ← 🆕 Executive summary for cross-project access
 │   ├── _index.md            ← Master catalog
 │   ├── _glossary.md         ← Term definitions
 │   ├── _absorb_log.json     ← Compilation tracker
@@ -176,7 +228,7 @@ llm-wiki-template/
 │   └── comparisons/
 │
 └── outputs/                 ← Generated content
-    ├── reports/
+    ├── reports/             ← AutoResearch synthesis reports
     ├── slides/
     ├── charts/
     └── summaries/
@@ -198,6 +250,14 @@ Edit `AGENTS.md` → Entity-Type Templates section to add new categories beyond 
 ### Modify Quality Rules
 
 All quality rules are in `AGENTS.md`. Adjust thresholds (article size, quote density, etc.) to match your preferences.
+
+### Configure AutoResearch
+
+Edit `raw/_research_program.md` to customize:
+- Search scope and constraints
+- Confidence scoring thresholds
+- Source exclusion lists
+- Domain-specific notes and priorities
 
 ### Add Obsidian Plugins
 

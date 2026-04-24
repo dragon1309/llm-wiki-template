@@ -1,47 +1,87 @@
 {
   "description": "Reverse link index. Maps article -> list of articles linking TO it.",
-  "last_updated": "2026-04-14",
-  "total_articles": 12,
-  "total_links": 23,
+  "last_updated": "1776165088.3222005",
+  "total_articles": 16,
+  "total_links": 37,
   "backlinks": {
-    "ai-character-consistency": [
-      "consistent-visual-style-ai",
-      "gemini-storybook"
+    "kkcash-system-architecture": [
+      "_ops_log",
+      "admin-central-core",
+      "eday-api-system",
+      "platform-dashboard-api-workflow",
+      "user-gui-architecture-analysis",
+      "kkcash-lotto-products"
     ],
-    "consistent-visual-style-ai": [
-      "ai-character-consistency",
-      "ai-vs-commissioned-art",
-      "gemini-storybook",
-      "kids-content-accessibility-safety"
+    "eday-api-system": [
+      "_ops_log",
+      "kong-gateway-microservices",
+      "seamless-wallet-flow",
+      "eday-api-microservices"
     ],
-    "dad-minh": [
-      "lily-linh",
-      "mom-lan"
+    "admin-central-core": [
+      "_ops_log",
+      "eday-api-system",
+      "kkcash-system-architecture",
+      "platform-dashboard-api-workflow"
     ],
-    "gemini-storybook": [
-      "ai-character-consistency",
-      "consistent-visual-style-ai"
+    "platform-dashboard-api": [
+      "my-dashboard-functional",
+      "platform-dashboard-api-deep-dive",
+      "platform-dashboard-ui"
     ],
-    "leo-binh": [
-      "dad-minh",
-      "grandma-hoa",
-      "lily-linh",
-      "mochi-pet",
-      "mom-lan"
+    "platform-dashboard-ui": [
+      "my-dashboard-functional",
+      "platform-dashboard-api",
+      "platform-dashboard-ui-deep-dive"
+    ],
+    "platform-dashboard-api-workflow": [
+      "_ops_log",
+      "platform-dashboard-api"
+    ],
+    "eday-api-microservices": [
+      "_ops_log"
+    ],
+    "kkcash-lotto-products": [
+      "_ops_log"
+    ],
+    "character-design-system": [
+      "_ops_log"
     ],
     "lily-linh": [
-      "dad-minh",
-      "grandma-hoa",
-      "leo-binh",
-      "mochi-pet",
-      "mom-lan"
+      "_ops_log"
     ],
-    "mochi-pet": [
-      "leo-binh"
+    "leo-binh": [
+      "_ops_log"
     ],
     "mom-lan": [
-      "dad-minh",
-      "lily-linh"
+      "_ops_log"
+    ],
+    "dad-minh": [
+      "_ops_log"
+    ],
+    "grandma-hoa": [
+      "_ops_log"
+    ],
+    "mochi-pet": [
+      "_ops_log"
+    ],
+    "video-production-workflow": [
+      "_ops_log"
+    ],
+    "platform-distribution-guide": [
+      "_ops_log"
+    ],
+    "cinematography-guide": [
+      "_ops_log"
+    ],
+    "seamless-wallet-flow": [
+      "kong-gateway-microservices"
+    ],
+    "platform-dashboard-ui-deep-dive": [
+      "platform-dashboard-api-deep-dive"
+    ],
+    "platform-dashboard-api-deep-dive": [
+      "platform-dashboard-ui-deep-dive"
     ]
   }
 }

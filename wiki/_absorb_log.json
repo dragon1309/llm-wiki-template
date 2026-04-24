@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-13",
+  "last_updated": "2026-04-16",
   "sources": {
     "raw/images/Expressions LILY_CANONICAL_V1.png": {
       "absorbed_at": "2026-04-13",
@@ -51,6 +51,54 @@
         "coppa-youtube-kids-compliance",
         "gemini-storybook"
       ]
+    },
+    "raw/repos/RBTH": {
+      "absorbed_at": "2026-04-15",
+      "wiki_articles": [
+        "kkcash-system-architecture",
+        "admin-central-core"
+      ]
+    },
+    "raw/papers/rb-cash-dev-note1.docx": {
+      "absorbed_at": "2026-04-15",
+      "wiki_articles": [
+        "kkcash-system-architecture",
+        "admin-central-core"
+      ]
+    },
+    "raw/papers/api-backend-documentation-v1-2.md": {
+      "absorbed_at": "2026-04-15",
+      "wiki_articles": [
+        "eday-api-system"
+      ]
+    },
+    "raw/repos/admin-central-server.md": {
+      "absorbed_at": "2026-04-15",
+      "wiki_articles": ["admin-central-core"]
+    },
+    "raw/repos/kkcash-product-row-1.md": {
+      "absorbed_at": "2026-04-15",
+      "wiki_articles": ["kkcash-lotto-products"]
+    },
+    "raw/repos/sourcetreeconfig.md": {
+      "absorbed_at": "2026-04-15",
+      "wiki_articles": ["kkcash-system-architecture"]
+    },
+    "raw/repos/API": {
+      "absorbed_at": "2026-04-15",
+      "wiki_articles": ["eday-api-microservices", "eday-api-system"]
+    },
+    "raw/repos/RBTH/centralize/platform-dashboard-api": {
+      "absorbed_at": "2026-04-16",
+      "wiki_articles": ["platform-dashboard-api"]
+    },
+    "raw/repos/RBTH/centralize/platform-dashboard": {
+      "absorbed_at": "2026-04-16",
+      "wiki_articles": ["platform-dashboard-ui"]
+    },
+    "raw/articles/MyDashboard_Functional.md": {
+      "absorbed_at": "2026-04-16",
+      "wiki_articles": ["my-dashboard-functional"]
     }
   }
 }
