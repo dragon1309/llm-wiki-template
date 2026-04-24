@@ -1,4 +1,56 @@
 {
-  "last_updated": null,
-  "sources": {}
+  "last_updated": "2026-04-13",
+  "sources": {
+    "raw/images/Expressions LILY_CANONICAL_V1.png": {
+      "absorbed_at": "2026-04-13",
+      "wiki_articles": ["lily-linh"]
+    },
+    "raw/images/Expressions LEO_CANONICAL_V1.png": {
+      "absorbed_at": "2026-04-13",
+      "wiki_articles": ["leo-binh"]
+    },
+    "raw/images/Expressions MOMLAN_CANONICAL_V1.png": {
+      "absorbed_at": "2026-04-13",
+      "wiki_articles": ["mom-lan"]
+    },
+    "raw/images/Expressions DADMINH__CANONICAL_V1.png": {
+      "absorbed_at": "2026-04-13",
+      "wiki_articles": ["dad-minh"]
+    },
+    "raw/images/Expressions GRANDMAHOA_CANONICAL_V1.png": {
+      "absorbed_at": "2026-04-13",
+      "wiki_articles": ["grandma-hoa"]
+    },
+    "raw/images/Expressions MOCHI_CANONICAL_V1.png": {
+      "absorbed_at": "2026-04-13",
+      "wiki_articles": ["mochi-pet"]
+    },
+    "raw/articles/deep-research-report.md": {
+      "absorbed_at": "2026-04-13",
+      "wiki_articles": [
+        "consistent-visual-style-ai",
+        "ai-character-consistency",
+        "kids-content-accessibility-safety",
+        "gemini-storybook",
+        "lily-linh",
+        "leo-binh",
+        "mom-lan",
+        "dad-minh",
+        "grandma-hoa",
+        "mochi-pet",
+        "ai-vs-commissioned-art"
+      ]
+    },
+    "raw/articles/deep-research-report (1).md": {
+      "absorbed_at": "2026-04-14",
+      "wiki_articles": [
+        "lily-linh",
+        "leo-binh",
+        "kids-content-accessibility-safety",
+        "daily-life-questions-bank",
+        "coppa-youtube-kids-compliance",
+        "gemini-storybook"
+      ]
+    }
+  }
 }

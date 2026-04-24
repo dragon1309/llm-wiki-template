@@ -5,7 +5,7 @@
 
 ## Purpose
 
-This Obsidian vault is an **AI-managed knowledge base** following the Karpathy LLM Knowledge Base methodology. The LLM writes and maintains all wiki content. The human rarely edits directly — they ingest raw data, ask questions, and review outputs.
+This Obsidian vault is an **AI-managed knowledge base** following the [Karpathy LLM Knowledge Base](https://x.com/karpathy/status/2039805659525644595) methodology. The LLM writes and maintains all wiki content. The human rarely edits directly — they ingest raw data, ask questions, and review outputs.
 
 ## Directory Structure
 
@@ -17,7 +17,8 @@ Second-brain/
 │   ├── repos/           ← GitHub repo notes, README summaries
 │   ├── videos/          ← YouTube transcripts, video notes
 │   ├── tweets/          ← X/Twitter threads, social posts
-│   └── misc/            ← Images, CSV, datasets, other
+│   ├── images/          ← Reference images, screenshots, concept art
+│   └── misc/            ← CSV, datasets, other documents
 │
 ├── wiki/                ← Compiled knowledge. AI-maintained.
 │   ├── _index.md        ← Master index (MUST stay updated)
