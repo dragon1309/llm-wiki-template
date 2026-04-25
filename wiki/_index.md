@@ -9,28 +9,30 @@ summary: "Master index listing all wiki articles with summaries and aliases"
 
 > Master catalog of the entire wiki. This file is automatically updated by the AI every time an article is added or removed.
 
-**Total articles:** 15  
-**Last updated:** 2026-04-13
+**Total articles:** 17  
+**Last updated:** 2026-04-25
 
 ---
 
-## Concepts (3 articles)
+## Concepts (4 articles)
 
 | Article | Aliases | Summary |
 |---------|---------|---------|
 | [[consistent-visual-style-ai]] | Phong cách hình ảnh, Visual Style, Nhất quán hình ảnh, Consistent Visual Style | Hệ thống duy trì tính đồng nhất hình ảnh AI. |
 | [[ai-character-consistency]] | Nhất quán nhân vật, Character Consistency, Face Drift, Nhất quán khuôn mặt | Kỹ thuật ngăn chặn Face Drift cho nhân vật AI. |
 | [[kids-content-accessibility-safety]] | Tiếp cận, An toàn trẻ em, Accessibility, Safety, Khả năng tiếp cận | Tiêu chuẩn tiếp cận và an toàn cho trẻ em. |
+| [[ai-lip-sync-technology]] | Lip Sync, Đồng bộ môi, Talking Head, OmniHuman | Công nghệ và công cụ giúp nhân vật AI nói chuyện tự nhiên. |
 
-## Tools (5 articles)
+## Tools (6 articles)
 
 | Article | Aliases | Summary |
 |---------|---------|---------|
-| [[gemini-storybook]] | Gemini, Storybook, Gemini Storybook | Công cụ tạo hình ảnh kể chuyện bằng AI. |
+| [[gemini-storybook]] | Gemini, Storybook, Gemini Storybook | Hệ thống prompt engineering tạo kịch bản kể chuyện bằng AI. |
 | [[character-design-system]] | Hệ thống thiết kế, Design System, Prompt Anchors, Quy tắc thiết kế | Hệ thống thông số hình ảnh nhất quán TLE. |
 | [[platform-distribution-guide]] | Distribution Guide, Platform Rules, Quy định nền tảng, Vietnam Compliance | Hướng dẫn phân phối và tuân thủ đa nền tảng. |
-| [[video-production-workflow]] | Production Workflow, Video Guide, Quy trình sản xuất, Storytelling Workflow | Quy trình 4 bước sản xuất video nhất quán. |
+| [[video-production-workflow]] | Production Workflow, Video Guide, Quy trình sản xuất, Storytelling Workflow | Quy trình 4 bước sản xuất video nhất quán 2026. |
 | [[cinematography-guide]] | Cinematography Guide, Layout Rules, Bố cục hình ảnh, Quy tắc 1/3, Fibonacci | Cẩm nang bố cục và kỹ thuật điện ảnh. |
+| [[ai-storybook-video-tools]] | Video Tools, Runway, Luma, ReadKidz, Story.com | Các công cụ AI hàng đầu để tạo video từ storybook năm 2026. |
 
 ## People (6 articles)
 
@@ -51,11 +53,13 @@ summary: "Master index listing all wiki articles with summaries and aliases"
 
 ---
 
-## Raw Sources (1 documents)
+## Raw Sources (3 documents)
 
 | Source | Type | Date Ingested |
 |--------|------|---------------|
 | `deep-research-report.md` | Article | 2026-04-13 |
+| `ai-storybook-video-tools-2026.md` | Article | 2026-04-25 |
+| `consistent-character-workflows.md` | Article | 2026-04-25 |
 
 ---
 

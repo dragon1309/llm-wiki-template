@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-13",
+  "last_updated": "2026-04-25",
   "sources": {
     "raw/images/Expressions LILY_CANONICAL_V1.png": {
       "absorbed_at": "2026-04-13",
@@ -49,6 +49,28 @@
         "kids-content-accessibility-safety",
         "daily-life-questions-bank",
         "coppa-youtube-kids-compliance",
+        "gemini-storybook"
+      ]
+    },
+    "raw/articles/ai-storybook-video-tools-2026.md": {
+      "absorbed_at": "2026-04-25",
+      "wiki_articles": [
+        "ai-storybook-video-tools",
+        "video-production-workflow"
+      ]
+    },
+    "raw/articles/consistent-character-workflows.md": {
+      "absorbed_at": "2026-04-25",
+      "wiki_articles": [
+        "video-production-workflow"
+      ]
+    },
+    "outputs/reports/research-video-from-storybook-2026-04-25.md": {
+      "absorbed_at": "2026-04-25",
+      "wiki_articles": [
+        "ai-storybook-video-tools",
+        "ai-lip-sync-technology",
+        "video-production-workflow",
         "gemini-storybook"
       ]
     }

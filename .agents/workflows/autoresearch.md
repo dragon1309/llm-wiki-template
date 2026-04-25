@@ -33,6 +33,7 @@ Workflow này biến Second Brain thành cỗ máy tìm kiếm chủ động. Tr
 
 **Vòng 1: Broad Search (Tìm diện rộng)**
 1. Phân tách chủ đề thành 3-5 keywords/angles khác nhau.
+   - **Dev Focus:** Thêm keywords "best practices", "implementation example", "boilerplate", "pitfalls".
 2. Dùng `search_web` tìm kiếm từng angle.
 3. Đánh giá kết quả: Chọn ra 3-5 URLs tốt nhất dựa theo Relevance, Authority, Recency (dựa trên program config).
 4. Fetch URLs bằng Defuddle (hoặc `read_url_content` nếu thất bại).
@@ -94,6 +95,11 @@ Mục tiêu nghiên cứu và các khoảng trống kiến thức ban đầu.
 ## Thực Thể & Khái Niệm Mới
 - **Concept:** [Định nghĩa ngắn]
 - **Tool/Person:** [Vai trò]
+
+## Implementation Patterns (Dành cho Dev)
+- **Pattern Name:** [Mô tả logic]
+- **Sample Snippet:** [Code block ngắn]
+- **API Surface:** [Các endpoint/functions quan trọng]
 
 ## Mâu Thuẫn (nếu có)
 - Nguồn A nói X nhưng Nguồn B nói Y. (Kèm đánh giá confidence)

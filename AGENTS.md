@@ -24,6 +24,8 @@ Second-brain/
 │   ├── _index.md        ← Master index (MUST stay updated)
 │   ├── _glossary.md     ← Key terms and definitions
 │   ├── concepts/        ← Concept articles (the core)
+│   ├── patterns/        ← Code patterns, logic flows, architecture
+│   ├── standards/       ← Project-specific linting, naming, and UI rules
 │   ├── tools/           ← Tool/product evaluations
 │   ├── people/          ← Notable people profiles
 │   └── comparisons/     ← A vs B analysis articles
@@ -126,7 +128,19 @@ When compiling from `raw/` to `wiki/`:
 - **Anti-Cramming:** Nếu sub-topic xuất hiện ≥3 đoạn trong 1 bài → tách thành bài con
 - **Anti-Thinning:** Không tạo bài nếu không viết được ≥3 câu có ý nghĩa. Mỗi lần touch bài → phải làm nó giàu hơn
 
-### Entity-Type Templates
+### Engineering Context (Implementation Workflow)
+
+To reduce context usage and implementation time, the AI must follow the **Wiki-First** protocol:
+
+1. **Map-Before-Code:** Before touching a repository, the AI must check `wiki/repos/` and `wiki/patterns/` to understand the architecture.
+2. **Context Injection:** Instead of reading 10 files, the AI should read 1 Wiki article that summarizes those 10 files.
+3. **Pattern Feedback:** After implementing a complex feature, the AI MUST update `wiki/patterns/` with the logic used, so it doesn't have to "re-discover" it next time.
+4. **Knowledge-Driven Implementation:**
+   - Find relevant [[patterns]] or [[standards]]
+   - Propose changes based on existing [[tools]]
+   - Reference [[concepts]] for architectural alignment
+
+## Entity-Type Templates (Expanded)
 
 Mỗi loại bài wiki có cấu trúc riêng. Dùng đúng template theo entity type:
 
@@ -135,6 +149,17 @@ Mỗi loại bài wiki có cấu trúc riêng. Dùng đúng template theo entity
 - `## [Sections thematic]` — tùy chủ đề (Kiến Trúc, Cơ Chế, Ví Dụ...)
 - `## Liên Hệ / Ứng Dụng` — context thực tế
 - `## Nguồn Tham Khảo`
+
+**Pattern** (`wiki/patterns/`):
+- `## Logic Flow` — Step-by-step logic
+- `## Implementation Snippet` — Idiomatic code example
+- `## Dependencies` — What this pattern relies on
+- `## Pitfalls & edge cases` — What to avoid
+
+**Standard** (`wiki/standards/`):
+- `## Rules` — Do's and Don'ts
+- `## Enforcement` — How to test for this standard
+- `## Rationale` — Why we do it this way
 
 **Tool** (`wiki/tools/`):
 - `## Tổng Quan` — tool là gì, ai tạo, mục đích

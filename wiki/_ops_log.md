@@ -54,3 +54,13 @@
 
 - **Cập nhật:** Bổ sung chi tiết "bông hoa vàng nhỏ bên phải băng đô" vào tất cả các Prompt của Lily trong [[lily-linh]] và `outputs/gemini-prompts-bundle.md`.
 - **Mục đích:** Tăng cường độ chi tiết và tính đặc trưng cho nhân vật chính, đảm bảo tính nhất quán khi tạo ảnh mới.
+
+## [2026-04-25] autoresearch | create video from storybook — 2 vòng, 2 nguồn nạp
+- **Nạp nguồn:** [[ai-storybook-video-tools-2026]], [[consistent-character-workflows]]
+- **Báo cáo:** `outputs/reports/research-video-from-storybook-2026-04-25.md`
+- **Kết quả:** Xác định quy trình 4 lớp (Modular Pipeline) và các công cụ Identity Anchor mới nhất.
+
+## [2026-04-25] compile | 4 bài mới, cập nhật từ research video storybook
+- **Bài mới:** [[ai-storybook-video-tools]], [[ai-lip-sync-technology]], [[video-production-workflow]] (recreated), [[gemini-storybook]] (recreated).
+- **Nguồn:** `raw/articles/ai-storybook-video-tools-2026.md`, `raw/articles/consistent-character-workflows.md`, `outputs/reports/research-video-from-storybook-2026-04-25.md`.
+- **Hành động:** Đồng bộ hóa quy trình sản xuất video 2026 vào wiki.

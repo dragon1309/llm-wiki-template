@@ -1,6 +1,6 @@
-# 🧠 LLM Wiki Template
+# 🧠 Second Brain — Engineering Edition
 
-> An AI-managed personal knowledge base using the **Karpathy LLM Wiki Pattern** — where LLMs write and maintain a structured Obsidian wiki from your raw research data.
+> An **AI-managed engineering knowledge base** — designed for high-precision software development, repository analysis, and surgical code implementation.
 
 [![Obsidian](https://img.shields.io/badge/Obsidian-7C3AED?logo=obsidian&logoColor=white)](https://obsidian.md/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -8,11 +8,26 @@
 🌐 **Language:** **English** | [Tiếng Việt](README-vi.md)
 ---
 
-## 📺 Video Hướng Dẫn
+## 🚀 Engineering Workflows
 
-[![Bộ Nhớ AI Kiểu Karpathy](https://img.youtube.com/vi/8K5bplMrGMw/maxresdefault.jpg)](https://youtu.be/8K5bplMrGMw?si=BvXJBK4emen8xwU1)
+This vault has been enhanced with **Active Implementation Engine** capabilities:
 
-**[Bộ Nhớ AI Kiểu Karpathy: 3 Bước Xây Wiki Cho Agent [Miễn Phí]](https://youtu.be/8K5bplMrGMw?si=BvXJBK4emen8xwU1)** — Hướng dẫn chi tiết từ setup đến sử dụng thực tế.
+- **`/map`** (🆕): **Deep Repository Analysis**. Compresses a codebase into architectural maps, [[patterns]], and [[standards]].
+- **`/dev`** (🆕): **Surgical Implementation**. A knowledge-driven coding workflow that uses the wiki as a "High-Resolution Map" to reduce tokens and errors.
+- **`/autoresearch`**: **Autonomous Research**. Now specifically extracts implementation snippets and API surfaces for development.
+- **`/compile`**: **Knowledge Extraction**. Turns raw research and code analysis into structured wiki articles.
+- **`/ask`**: **Direct Query**. Question your knowledge base directly with smart context retrieval.
+
+---
+
+## 🧪 The Wiki-First Protocol
+
+To maximize efficiency and minimize token usage, this system operates on a **Map-Before-Code** mandate:
+
+1. **Knowledge Retrieval**: The AI reads "Compressed Articles" ([[patterns]], [[standards]]) instead of scanning raw files repeatedly.
+2. **Surgical Changes**: Implementation is biased toward simplicity and minimal diffs (Inspired by `CLAUDE.md`).
+3. **Verification Loops**: Every `/dev` task uses `[Step] → verify: [check]` logic to ensure success before moving on.
+4. **Knowledge Feedback**: Every task updates the Wiki with "Lessons Learned," creating compound engineering knowledge.
 
 ---
 
